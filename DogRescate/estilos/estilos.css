@@ -1,0 +1,265 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #111110;
+}
+.navbar {
+    min-height: 86px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background: #1f1f1d;
+    border-bottom: 1px solid #333;
+}
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #fff;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.marca-logo {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: #f4511e;
+    border-radius: 12px;
+}
+
+.marca-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+    .menu a {
+        color: #b8b8b8;
+        font-size: 17px;
+        text-decoration: none;
+    }
+
+        .menu a:hover {
+            color: #fff;
+        }
+
+.boton-login {
+    padding: 15px 33px;
+    border-radius: 30px;
+    background: #f4511e;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+    .boton-login:hover {
+        background: #db4315;
+    }
+
+.auto-style1 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.auto-style2 {
+    text-align: center;
+    color: #FF9900;
+}
+
+.auto-style3 {
+    color: #C0C0C0;
+    margin-top:20px;
+}
+
+/*listas*/
+
+.lista-perros {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.tarjeta-perro {
+    overflow: hidden;
+    border-radius: 20px;
+    background: #2d2c29;
+}
+
+.foto-contenedor {
+    position: relative;
+}
+
+    .foto-contenedor > img {
+        display: block;
+        width: 100%;
+        height: 288px;
+        object-fit: cover;
+    }
+
+.etiquetas {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    display: flex;
+    gap: 8px;
+}
+
+    .etiquetas span {
+        padding: 5px 15px;
+        border-radius: 20px;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+.tamano {
+    background: #333330;
+}
+
+.disponible {
+    background: #269e7a;
+}
+
+.urgente {
+    background: #e75b2d;
+}
+
+.datos-perro {
+    padding: 25px 28px;
+}
+
+.nombre-edad {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color:white;
+}
+
+    .nombre-edad h2 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .nombre-edad span,
+    .datos-perro p {
+        color: #aaa;
+    }
+main {
+    min-height: 100vh;
+    padding: 70px 5%;
+    background: radial-gradient( ellipse at top, #a33b16 0%, #111110 65% );
+}
+
+
+.footer {
+    background-color: #111110;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.footer__top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 64px 60px 48px;
+}
+
+.footer__brand p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.7;
+    margin-top: 14px;
+    max-width: 260px;
+}
+
+.footer__col-title {
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.35);
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+
+.footer__col ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+    .footer__col ul a {
+        font-size: 14px;
+        color: rgba(255,255,255,0.55);
+        transition: color 0.2s;
+        text-decoration:none;
+    }
+
+        .footer__col ul a:hover {
+            color: darkorange;
+        }
+
+.footer__socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.footer__social-btn {
+    width: 38px;
+    height: 38px;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: background-color 0.2s;
+}
+
+    .footer__social-btn:hover {
+        background-color: var(--color-primary);
+    }
+
+.footer__bottom {
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding: 22px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .footer__bottom p {
+        font-size: 12px;
+        color: rgba(255,255,255,0.28);
+    }
+
+    .footer__bottom a {
+        color: rgba(255,255,255,0.28);
+        transition: color 0.2s;
+        text-decoration:none;
+    }
+
+        .footer__bottom a:hover {
+            color: darkorange;
+        }
+
+
+

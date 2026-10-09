@@ -1,0 +1,125 @@
+  body {
+      background-color: #f0f2f5;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+  }
+
+  .carta-verificacion {
+      background: #fff;
+      width: 100%;
+      max-width: 650px;
+      padding: 30px;
+      border-radius: 24px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      text-align: center;
+  }
+
+  .titulo-principal {
+      font-weight: 700;
+      margin-bottom: 5px;
+      font-size: 1.8rem;
+  }
+
+  .texto-sub {
+      font-size: 0.9rem;
+  }
+
+  .contenedor-camara {
+      position: relative;
+      width: 100%;
+      max-width: 540px;
+      aspect-ratio: 4 / 3;
+      margin: 20px auto;
+      border-radius: 20px;
+      border: 5px solid #f27121;
+      background: #222;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  #video_camara {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scaleX(-1);
+  }
+
+  canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+      z-index: 10;
+      pointer-events: none;
+  }
+
+  .btn-verificar {
+      background: linear-gradient(to right, #f27121, #e94057);
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      border-radius: 30px;
+      font-weight: bold;
+      width: 100%;
+      max-width: 400px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 15px;
+  }
+
+  .btn-verificar:hover {
+      transform: scale(1.03);
+  }
+
+  .btn-verificar:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+      transform: none;
+  }
+
+  .estado-cargando {
+      color: #f27121;
+      font-weight: bold;
+      margin-bottom: 10px;
+      min-height: 24px;
+  }
+
+  .btn-regresar {
+      border-radius: 15px;
+      font-weight: 700;
+      padding: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: 0.3s;
+  }
+
+  .btn-regresar:hover {
+      text-decoration: none;
+  }
+
+@media (max-height: 750px) {
+    body {
+        padding: 10px;
+    }
+
+    .carta-verificacion {
+        padding: 20px;
+    }
+
+    .contenedor-camara {
+        margin: 10px auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .titulo-principal {
+        font-size: 1.5rem;
+    }
+}

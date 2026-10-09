@@ -1,0 +1,16 @@
+IMPORTANTE - AJAX CONTROL TOOLKIT
+
+Este proyecto NO incluye AjaxControlToolkit.dll dentro de la carpeta del proyecto,
+porque la profesora indicó que se cargue desde el Cuadro de herramientas.
+
+En Visual Studio:
+1. Abre la pestaña "Ajax Control Toolkit" del Cuadro de herramientas.
+2. Si ya cargaste AjaxControlToolkit.dll de la profesora, no lo vuelvas a cargar.
+3. Arrastra un control Accordion desde esa pestaña a Inicio.aspx (o abre Inicio.aspx
+   y conserva los controles que ya están escritos).
+4. Si Visual Studio pregunta si desea agregar una referencia, acepta.
+5. Verifica en Explorador de soluciones > Referencias que aparezca AjaxControlToolkit.
+6. Recompila la solución.
+
+Después de agregar la referencia desde el Toolbox, el proyecto debe reconocer
+Accordion, AccordionPane y AnimationExtender.

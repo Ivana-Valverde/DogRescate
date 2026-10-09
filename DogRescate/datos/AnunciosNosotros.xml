@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+
+	<Ad>
+		<ImageUrl>~/img/SobreNosotros.jpg</ImageUrl>
+		<NavigateUrl>~/Perros.aspx</NavigateUrl>
+		<AlternateText>Dog Rescate</AlternateText>
+		<Keyword>nosotros</Keyword>
+		<Impressions>100</Impressions>
+	</Ad>
+</Advertisements>

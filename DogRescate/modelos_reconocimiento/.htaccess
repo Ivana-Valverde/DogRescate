@@ -1,0 +1,9 @@
+<FilesMatch ".*">
+    Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
+ForceType application/octet-stream
+
+<FilesMatch "\.(json)$">
+    ForceType application/json
+</FilesMatch>
